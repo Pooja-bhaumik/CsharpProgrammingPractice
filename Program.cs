@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ProblemSolving
 {
     class Program
     {
         static void Main(string[] args)
+           
         {
+            //Child obj = new Child();
             //1- Example usage of FindFirstUniqueCharacter method
             //string input = "swiss";
             //char result = FindFirstUniqueCharacter(input);
@@ -31,6 +34,79 @@ namespace ProblemSolving
             //4-remove duplicate from sorted array
             //int[] numbers = { 1, 2, 2, 3, 5, 5 };
             //int[] result = FunRemoveDuplicate(numbers);
+
+            //5-Word count
+            //string input = "Please god give me a job t";
+            //int count = calculateWordCount(input);
+            //Console.WriteLine(count);
+
+
+
+            //6-To count the number of occurrences of each character in a string like "aabbcca"
+            //string input = "aabbcca";
+            //CountCharacterOccurrences(input);
+
+            //7-Given number is prime or not(A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself. In other words,
+            //a prime number is only divisible by 1 and the number itself, )
+
+            //Console.Write("Please enter a number");
+            //int number = int.Parse(Console.ReadLine());
+            //bool isPrime = true;
+            //if (number < 2)
+            //{
+            //    isPrime = false;
+            //}
+            //else
+            //{
+            //    for(int i = 2; i < number; i++)
+            //    {
+            //        if(number % i == 0)
+            //        {
+            //            isPrime = false;
+            //            break;
+            //        }
+            //    }
+            //    if (isPrime)
+            //    {
+            //        Console.WriteLine($"{number} is Prime");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"{number} is not a Prime");
+            //    }
+            //}
+
+            //8:Remove duplicate elements from array//this logic will be work when the array is sorted
+
+
+            //    int[] arr = { 6, 4, 4, 6, 2, 2, 1 };
+            //    int[] temp = new int[arr.Length];
+
+            //int j = 0;
+            //for(int i = 0; i < arr.Length-1; i++)
+            //{
+            //    if(arr[i] != arr[i + 1])
+            //    {
+
+            //        temp[j++] = arr[i];
+            //    }
+            //}
+            //temp[j++] = arr[arr.Length - 1];
+            //for(int i = 0; i < j; i++)
+            //{
+            //    Console.WriteLine($"{i}");
+            //}
+
+            //9:Array Manipulation to Remove Duplicates and Move Zeros
+            //int[] arr = { 1, 2, 3, 2, 0, 0, 6, 0 };
+            //int[] result = MovingZerosEndwithDuplicateRemoval.MoveZerosAndRemoveDuplicates(arr);
+            //Console.WriteLine(string.Join(",", result));
+
+            //10 reverse string with built in method
+
+            string result = ReverseStringWithBuiltInMethod.ReverseStringWithBuilt();
+
+        
 
         }
 
@@ -65,7 +141,7 @@ namespace ProblemSolving
 
 
         //2-
-        //Method to find second min highest number of an array
+        //Method to find second max highest number of an array
         //public static int FindSecondMinimumNum(int[] numbers)
         //{
         //    int max = numbers[0];
@@ -99,6 +175,54 @@ namespace ProblemSolving
 
         //4-Remove duplicate from sorted array
 
+        //5-calculate word count
+
+        //public static int calculateWordCount(string input)
+        //{
+        //    if (string.IsNullOrWhiteSpace(input))
+        //    {
+        //        return 0;
+        //    }
+        //    int count = 0;
+        //    bool isWord = false;
+        //    foreach (char c in input)
+        //    {
+        //        if (char.IsWhiteSpace(c))
+        //        {
+        //            isWord = false;
+        //        }
+        //        else
+        //        {
+        //            if (!isWord)
+        //            {
+        //                count++;
+        //                isWord = true;
+        //            }
+        //        }
+        //    }
+        //    return count;
+        //}
+        //public static void CountCharacterOccurrences(string input)
+        //{
+        //    var charCount = new Dictionary<char, int>();
+
+        //    foreach (char c in input)
+        //    {
+        //        if (charCount.ContainsKey(c))
+        //        {
+        //            charCount[c]++;
+        //        }
+        //        else
+        //        {
+        //            charCount[c] = 1;
+        //        }
+        //    }
+
+        //    foreach (var item in charCount)
+        //    {
+        //        Console.WriteLine($"{item.Key}: {item.Value}");
+        //    }
+        //}
 
     }
 }
