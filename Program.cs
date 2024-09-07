@@ -110,10 +110,10 @@ namespace ProblemSolving
             //NthHighestNumber.FindNthHighestNumber();
 
             //12 nth smallest number
-            //FindNthSmallestNumber.FindNthMinimumNumber();
+           int number= FindNthSmallestNumber.KthSmallest();
 
             //12 swap without temp
-            SwapWithoutTemp.SwapTwoNumberWithoutTemp();
+            //SwapWithoutTemp.SwapTwoNumberWithoutTemp();
 
 
         }

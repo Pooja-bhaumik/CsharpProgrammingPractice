@@ -6,35 +6,29 @@ namespace ProblemSolving
 {
     public class FindNthSmallestNumber
     {
-        public static void FindNthMinimumNumber()
+        public static int KthSmallest()
         {
-            int[] numbers = { 4, 2, 7, 1, 5, 3 };
-            int min = int.MaxValue;
-            int secondMin = int.MaxValue;
-            int thirdMin = int.MaxValue;
-            for (int i = 0; i < numbers.Length; i++)
+            int[] nums = { 3, 7, 4, 1, 9, 2 };
+            int[] sorteddecendingarr = { 1, 2, 3, 4, 7, 9 };
+            int k = 3;
+            // Perform bubble sort to arrange the elements in ascending order
+            for (int i = 0; i < nums.Length - 1; i++)
             {
-                
-                // Update min, secondMin, and thirdMin
-                if (numbers[i] < min)
+                int outerloopcondition = nums.Length - 1;
+                for (int j = 0; j < nums.Length - i - 1; j++)
                 {
-                    thirdMin = secondMin;  // Previous secondMin becomes thirdMin
-                    secondMin = min;       // Previous min becomes secondMin
-                    min = numbers[i];      // Update min to the new smallest number
-                }
-                else if (numbers[i] < secondMin && numbers[i] != min)
-                {
-                    thirdMin = secondMin;  // Previous secondMin becomes thirdMin
-                    secondMin = numbers[i]; // Update secondMin to the new second smallest number
-                }
-                else if (numbers[i] < thirdMin && numbers[i] != secondMin && numbers[i] != min)
-                {
-                    thirdMin = numbers[i]; // Update thirdMin to the new third smallest number
+                    int innercondition = nums.Length - i - 1;
+                    if (nums[j] > nums[j + 1])
+                    {
+                        // Swap elements
+                        int temp = nums[j];
+                        nums[j] = nums[j + 1];
+                        nums[j + 1] = temp;
+                    }
                 }
             }
-            Console.WriteLine($"Min: {min}");
-            Console.WriteLine($"Second Min: {secondMin}");
-            Console.WriteLine($"Third Min: {thirdMin}");
+            Console.WriteLine(nums[k - 1]);
+            return nums[k - 1];
         }
     }
 }
