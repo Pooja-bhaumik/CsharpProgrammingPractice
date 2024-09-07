@@ -22,6 +22,7 @@ namespace ProblemSolving
                 {
                     resultList.Add(num);
                     seen.Add(num);
+
                 }
             }
 
@@ -35,6 +36,21 @@ namespace ProblemSolving
 
             //IF WE WANT TO Print in this  
             //Console.WriteLine(string.Join(",", resultList));
+
+
+
+            //Without moving zero
+            //int[] input = { 1, 2, 4, 4, 5, 3 };
+            //List<int> numbers = new List<int>();
+            //foreach (int number in input)
+            //{
+            //    if (!numbers.Contains(number))
+            //    {
+            //        numbers.Add(number);
+            //    }
+            //}
+            //numbers.ToArray();
+            //Console.WriteLine(string.Join(",", numbers));
         }
     }
 }

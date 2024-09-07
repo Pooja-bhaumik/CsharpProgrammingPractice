@@ -6,7 +6,7 @@ namespace ProblemSolving
     class Program
     {
         static void Main(string[] args)
-           
+
         {
             //Child obj = new Child();
             //1- Example usage of FindFirstUniqueCharacter method
@@ -104,9 +104,17 @@ namespace ProblemSolving
 
             //10 reverse string with built in method
 
-            string result = ReverseStringWithBuiltInMethod.ReverseStringWithBuilt();
+            //string result = ReverseStringWithBuiltInMethod.ReverseStringWithBuilt();
 
-        
+            //11 nth highest number
+            //NthHighestNumber.FindNthHighestNumber();
+
+            //12 nth smallest number
+            //FindNthSmallestNumber.FindNthMinimumNumber();
+
+            //12 swap without temp
+            SwapWithoutTemp.SwapTwoNumberWithoutTemp();
+
 
         }
 
@@ -137,7 +145,23 @@ namespace ProblemSolving
 
         //    return '\0'; // If no unique character is found, return null character.
         //}
+        //second approch for console first unique
 
+        //         for(int i =0;i<input.Length;i++){
+        //            bool isUnique = true;
+        //            for(int j=0;j<input.Length;j++){
+        //                if(i!=j && input[i]==input[j]){
+        //                    isUnique = false;
+        //                    break;
+        //                }
+
+        //}
+        //if (isUnique)
+        //{
+        //    Console.WriteLine(input[i]);
+        //    break;
+        //}
+        //        }
 
 
         //2-
