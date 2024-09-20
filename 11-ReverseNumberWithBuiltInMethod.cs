@@ -14,6 +14,9 @@ namespace ProblemSolving
             long result = Convert.ToInt64(numArray);
             return result;
 
+
+            
+
         }
         
         

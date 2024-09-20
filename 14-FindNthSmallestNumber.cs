@@ -14,10 +14,12 @@ namespace ProblemSolving
             // Perform bubble sort to arrange the elements in ascending order
             for (int i = 0; i < nums.Length - 1; i++)
             {
-                int outerloopcondition = nums.Length - 1;
-                for (int j = 0; j < nums.Length - i - 1; j++)
+                int outerloopcondition = nums.Length-i - 1;
+                for (int j = 0; j < nums.Length -i - 1; j++)
                 {
-                    int innercondition = nums.Length - i - 1;
+                    int innercondition = nums.Length  - 1;
+                    int outerloopinit = i;
+                    int innerloopinit = j;
                     if (nums[j] > nums[j + 1])
                     {
                         // Swap elements

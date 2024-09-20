@@ -107,13 +107,17 @@ namespace ProblemSolving
             //string result = ReverseStringWithBuiltInMethod.ReverseStringWithBuilt();
 
             //11 nth highest number
-            //NthHighestNumber.FindNthHighestNumber();
+            NthHighestNumber.FindNthHighestNumber();
 
             //12 nth smallest number
-           int number= FindNthSmallestNumber.KthSmallest();
+            //int number= FindNthSmallestNumber.KthSmallest();
 
             //12 swap without temp
             //SwapWithoutTemp.SwapTwoNumberWithoutTemp();
+
+            //16 remove duplicate without predifend
+
+            _16_RemoveDuplicateFromArrWithoutHash.RemoveDuplicateFromArr();
 
 
         }
@@ -238,6 +242,7 @@ namespace ProblemSolving
         //        }
         //        else
         //        {
+
         //            charCount[c] = 1;
         //        }
         //    }
