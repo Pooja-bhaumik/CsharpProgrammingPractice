@@ -8,6 +8,8 @@ namespace ProblemSolving
         static void Main(string[] args)
 
         {
+            //21-    //program to print a sequence of[012345678987654321]using single loop(bizupon interview)
+            _21_SingleLoopSequence.SingleLoopSequence();
             //Child obj = new Child();
             //1- Example usage of FindFirstUniqueCharacter method
             //string input = "swiss";
@@ -16,6 +18,7 @@ namespace ProblemSolving
             //if (result != '\0')
             //{
             //    Console.WriteLine($"The first unique character is: {result}");
+
             //}
             //else
             //{
@@ -55,6 +58,7 @@ namespace ProblemSolving
             //if (number < 2)
             //{
             //    isPrime = false;
+
             //}
             //else
             //{
@@ -107,7 +111,7 @@ namespace ProblemSolving
             //string result = ReverseStringWithBuiltInMethod.ReverseStringWithBuilt();
 
             //11 nth highest number
-            NthHighestNumber.FindNthHighestNumber();
+            //NthHighestNumber.FindNthHighestNumber();
 
             //12 nth smallest number
             //int number= FindNthSmallestNumber.KthSmallest();
@@ -117,7 +121,17 @@ namespace ProblemSolving
 
             //16 remove duplicate without predifend
 
-            _16_RemoveDuplicateFromArrWithoutHash.RemoveDuplicateFromArr();
+            //_16_RemoveDuplicateFromArrWithoutHash.RemoveDuplicateFromArr();
+
+            //19-Write a function in C# that takes an integer array as input and returns an integer array. The function should rearrange the elements of the array such that:
+            //All positive numbers (including zeros) are moved to the left.
+            //All negative numbers are moved to the right.
+            //The order of the positive / zero and negative numbers must remain the same as in the input array.
+            //Do not sort the array.
+
+            int[] input = { 5, 3, -3, -4, 0, 2, -1, 4, -7, 2 };
+            int[] result = RearrangeArray.RearrangeArrayFun(input);
+            Console.WriteLine("Output: [" + string.Join(", ", result) + "]");
 
 
         }
@@ -201,6 +215,7 @@ namespace ProblemSolving
         //    return result;
         //}
 
+
         //4-Remove duplicate from sorted array
 
         //5-calculate word count
@@ -252,6 +267,6 @@ namespace ProblemSolving
         //        Console.WriteLine($"{item.Key}: {item.Value}");
         //    }
         //}
-
+        
     }
 }

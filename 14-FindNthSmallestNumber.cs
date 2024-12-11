@@ -12,6 +12,7 @@ namespace ProblemSolving
             int[] sorteddecendingarr = { 1, 2, 3, 4, 7, 9 };
             int k = 3;
             // Perform bubble sort to arrange the elements in ascending order
+            //The reason for nums.Length - 1 in the outer loop is because after sorting, the last element is in its correct position, and we don't need to check it again in subsequent passes.
             for (int i = 0; i < nums.Length - 1; i++)
             {
                 int outerloopcondition = nums.Length-i - 1;
@@ -24,7 +25,7 @@ namespace ProblemSolving
                     {
                         // Swap elements
                         int temp = nums[j];
-                        nums[j] = nums[j + 1];
+                        nums[j] = nums[j + 1];  
                         nums[j + 1] = temp;
                     }
                 }

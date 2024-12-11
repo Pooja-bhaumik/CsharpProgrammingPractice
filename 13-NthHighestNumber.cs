@@ -8,12 +8,16 @@ namespace ProblemSolving
     {
         public static void FindNthHighestNumber()
         {
-            int[] numbers = { 11,3,10,5,4 };
+
+
+            int[] numbers = { 11, 3, 10, 5, 4 };
+
+
             int[] assendingarr = { 11, 10, 5, 4, 3 };//bade se chota
             int n = 3;
-            for(int i = 0; i < numbers.Length - 1; i++)
+            for (int i = 0; i < numbers.Length - 1; i++)
             {
-                for(int j = 0; j < numbers.Length - i - 1; j++)
+                for (int j = 0; j < numbers.Length - i - 1; j++)
                 {
                     if (numbers[j] < numbers[j + 1])
                     {
@@ -24,7 +28,7 @@ namespace ProblemSolving
                 }
             }
             Console.WriteLine($"Third max num::{numbers[n - 1]}");
-            Console.WriteLine($"second max num::{numbers[n - 1-1]}");
+            Console.WriteLine($"second max num::{numbers[n - 1 - 1]}");
             Console.WriteLine($"First max num::{numbers[n - 3]}");
         }
     }
