@@ -8,8 +8,23 @@ namespace ProblemSolving
         static void Main(string[] args)
 
         {
+            //22-Reverse a number without using built in method
+            long ReverseNumberWithoutBuiltInMethod = ReverseNumberWithoutBuiltIn.ReverseNumberWithoutBuiltInMethod();
+
+            //22-Swapping with tuple destructuring
+            // (int a,int b) =SwapWithTupleDestructuring.SwappingValues();
+            //Console.WriteLine($"A:::{a} and B:::{b}");
+            //Console.ReadLine();
+
+            //23-//get all the pairs whose sum will be 18
+            //var result = FindTargetSumPairs.GetTragetSumPairs();
+            //foreach (var pair in result)
+            //{
+            //    Console.WriteLine($"Pair: ({pair.Item1}, {pair.Item2})");
+            //}
+
             //21-    //program to print a sequence of[012345678987654321]using single loop(bizupon interview)
-            _21_SingleLoopSequence.SingleLoopSequence();
+            //_21_SingleLoopSequence.SingleLoopSequence();
             //Child obj = new Child();
             //1- Example usage of FindFirstUniqueCharacter method
             //string input = "swiss";
@@ -116,8 +131,11 @@ namespace ProblemSolving
             //12 nth smallest number
             //int number= FindNthSmallestNumber.KthSmallest();
 
-            //12 swap without temp
-            //SwapWithoutTemp.SwapTwoNumberWithoutTemp();
+            //12 swap without temp//return a,b using tuples
+            //int a = 10;
+            //int b = 20;
+            //(a, b)=SwapWithoutTemp.SwapTwoNumberWithoutTemp(a,b);
+            //Console.WriteLine($"a:::{a} and b:::::{b}");
 
             //16 remove duplicate without predifend
 
@@ -129,9 +147,9 @@ namespace ProblemSolving
             //The order of the positive / zero and negative numbers must remain the same as in the input array.
             //Do not sort the array.
 
-            int[] input = { 5, 3, -3, -4, 0, 2, -1, 4, -7, 2 };
-            int[] result = RearrangeArray.RearrangeArrayFun(input);
-            Console.WriteLine("Output: [" + string.Join(", ", result) + "]");
+            //int[] input = { 5, 3, -3, -4, 0, 2, -1, 4, -7, 2 };
+            //int[] result = RearrangeArray.RearrangeArrayFun(input);
+            //Console.WriteLine("Output: [" + string.Join(", ", result) + "]");
 
 
         }
@@ -239,7 +257,7 @@ namespace ProblemSolving
         //            if (!isWord)
         //            {
         //                count++;
-        //                isWord = true;
+        //                //isWord = true;//no need to do thi
         //            }
         //        }
         //    }
@@ -267,6 +285,6 @@ namespace ProblemSolving
         //        Console.WriteLine($"{item.Key}: {item.Value}");
         //    }
         //}
-        
+
     }
 }

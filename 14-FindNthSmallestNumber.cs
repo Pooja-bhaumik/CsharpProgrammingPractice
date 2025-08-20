@@ -17,6 +17,7 @@ namespace ProblemSolving
             {
                 int outerloopcondition = nums.Length-i - 1;
                 for (int j = 0; j < nums.Length -i - 1; j++)
+
                 {
                     int innercondition = nums.Length  - 1;
                     int outerloopinit = i;

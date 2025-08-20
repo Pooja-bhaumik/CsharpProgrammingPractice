@@ -6,6 +6,8 @@ using System.Text;
 namespace ProblemSolving
 {
     //interview ask
+
+
     public class _17_CountOfParticularCharterLinq
     {
         public static void CountOfParticularCharterLinq()

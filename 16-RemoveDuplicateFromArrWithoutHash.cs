@@ -6,8 +6,6 @@ namespace ProblemSolving
 {
     public static class _16_RemoveDuplicateFromArrWithoutHash
     {
-
-
         public static void RemoveDuplicateFromArr()
         {
             int[] input = { 1, 2, 3, 1, 3, 5, 2 };
@@ -25,6 +23,9 @@ namespace ProblemSolving
                     }
 
                 }
+
+
+
                 if (!isDuplicate)
                 {
                     result[resultIndex] = input[i];

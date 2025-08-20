@@ -20,6 +20,7 @@ namespace ProblemSolving
                 }
                 else if (!seen.Contains(num))
                 {
+                    
                     resultList.Add(num);
                     seen.Add(num);
 
@@ -30,6 +31,7 @@ namespace ProblemSolving
             for (int i = 0; i < zeroCount; i++)
             {
                 resultList.Add(0);
+
             }
 
             return resultList.ToArray();
